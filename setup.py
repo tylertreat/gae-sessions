@@ -1,4 +1,4 @@
-from setuptools import find_packages, setup
+from setuptools import setup
 
 
 setup_args = dict(
@@ -10,7 +10,10 @@ setup_args = dict(
     author='David Underhill',
     author_email='dgu@cs.stanford.edu',
     url='https://github.com/dound/gae-sessions',
-    packages=find_packages(),
+    packages=['gaesessions'],
+    namespace_packages=['gaesessions'],
+    zip_safe=False,
+    platforms='any',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
